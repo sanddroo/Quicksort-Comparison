@@ -10,27 +10,15 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
-```
-Give examples
-```
+* GCC
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+1. Download the files from the repository
 
-Say what the step will be
+2. Compile the files using "make" on the terminal in the quicksort directory
 
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+3. Execute the program using "./quicksort (sample file)" for sequential sort and "./quicksort-parallel (sample file)" for parallel sort
 
 ## Running the tests
 
@@ -42,40 +30,32 @@ Test is done with both sequential and parallel quicksort programs to find the av
 |---|---|---|---|---|
 | 10 | 0.004 ms | 0.003 ms | 0.002 ms | 0.003 ms|
 | 100 | 0.034 ms | 0.027 ms | 0.027 ms | 0.029 ms |
-| 1000 | 1.28 ms | 1.282 ms | 1.268 ms | 1,277 ms |
-| 10000 | 59.045 ms | 30.715 ms | 31.518 ms | 40,426 ms |
+| 1000 | 1.28 ms | 1.282 ms | 1.268 ms | 1.277 ms |
+| 10000 | 59.045 ms | 30.715 ms | 31.518 ms | 40.426 ms |
 
 ### Parallel
 
 | Sample Size | Test 1 Time | Test 2 Time | Test3 Time| Average Time |
 |---|---|---|---|---|
-| 10 | 2.553 ms | 2.501 ms | 2.545 ms | - |
-| 100 | 7.99 ms | 8.449 ms | 7.755 ms | - |
-| 1000 | 182.312 ms | 192.32 ms | 182.317 ms | - |
-| 10000 | 7454.546 ms | 15066.25 ms | 7531.908 ms | - |
+| 10 | 2.553 ms | 2.501 ms | 2.545 ms | 2.533 ms |
+| 100 | 7.99 ms | 8.449 ms | 7.755 ms | 8.0647 ms |
+| 1000 | 182.312 ms | 192.32 ms | 182.317 ms | 556.949 ms |
+| 10000 | 7454.546 ms | 15066.25 ms | 7531.908 ms | 10017.568 ms |
 
-### Break down into end to end tests
+## Result
 
-Explain what these tests test and why
+### Result Comparison
 
-```
-Give an example
-```
+| Sample Size | Sequence | Parallel |
+|---|---|---|
+|10| 0.003 ms | 2.533 ms |
+|100| 0.029 ms | 8.0647 ms |
+|1000| 1.277 ms | 556.949 ms | 
+|10000| 40.426 ms | 10017.568 ms |
 
-### And coding style tests
+### Result analysis
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
+From the result we can conclude that sequential quicksort is faster than parallel quicksort. This may however be different if the sample size for the test is much larger. According to the a paper writen by Tinku Singh and Durgesh Kumar Srivastava, if the sample size of quicksort is small, sequential quicksort is faster because of several reasons such as parallelism overhead, thread creation, time spent at synchronization, thread communication, granularity of task decomposition, etc. 
 
 ## Authors
 
@@ -89,3 +69,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * Quicksort program taken from [markwkm quicksort repository](https://github.com/markwkm/quicksort)
 * Template from [PurpleBooth Readme Template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
+* [Threshold Analysis and Comparison of Sequential and Parallel Divide and Conquer Sorting Algorithms](https://pdfs.semanticscholar.org/cba9/770c4fad941fe5e501539525953a242a36f8.pdf) by Tinku Singh and Durgesh Kumar Srivastava
