@@ -53,6 +53,10 @@ Test is done with both sequential and parallel quicksort programs to find the av
 |1000| 1.277 ms | 556.949 ms | 
 |10000| 40.426 ms | 10017.568 ms |
 
+### Line Graph Comparison
+
+![Quicksort Graph](https://github.com/johnyhuang/Quicksort-Comparison/blob/master/quicksort%20chart.jpg)
+
 ### Result analysis
 
 From the result we can conclude that sequential quicksort is faster than parallel quicksort. This may however be different if the sample size for the test is much larger. According to the a paper writen by Tinku Singh and Durgesh Kumar Srivastava, if the sample size of quicksort is small, sequential quicksort is faster because of several reasons such as parallelism overhead, thread creation, time spent at synchronization, thread communication, granularity of task decomposition, etc. 
