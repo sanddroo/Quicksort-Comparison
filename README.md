@@ -28,19 +28,19 @@ Test is done with both sequential and parallel quicksort programs to find the av
 
 | Sample Size | Test 1 Time | Test 2 Time | Test3 Time | Average Time |
 |---|---|---|---|---|
-| 10 | 0.004 ms | 0.003 ms | 0.002 ms | 0.003 ms|
-| 100 | 0.034 ms | 0.027 ms | 0.027 ms | 0.029 ms |
-| 1000 | 1.28 ms | 1.282 ms | 1.268 ms | 1.277 ms |
-| 10000 | 59.045 ms | 30.715 ms | 31.518 ms | 40.426 ms |
+| 10 | 0.006 ms | 0.002 ms | 0.004 ms | 0.004 ms|
+| 100 | 0.037 ms | 0.028 ms | 0.028 ms | 0.030 ms |
+| 1000 | 1.289 ms | 1.292 ms | 1.278 ms | 1.270 ms |
+| 10000 | 55.045 ms | 30.515 ms | 38.518 ms | 45.426 ms |
 
 ### Parallel
 
 | Sample Size | Test 1 Time | Test 2 Time | Test3 Time| Average Time |
 |---|---|---|---|---|
-| 10 | 2.553 ms | 2.501 ms | 2.545 ms | 2.533 ms |
-| 100 | 7.99 ms | 8.449 ms | 7.755 ms | 8.0647 ms |
-| 1000 | 182.312 ms | 192.32 ms | 182.317 ms | 556.949 ms |
-| 10000 | 7454.546 ms | 15066.25 ms | 7531.908 ms | 10017.568 ms |
+| 10 | 2.584 ms | 2.522 ms | 2.535 ms | 2.573 ms |
+| 100 | 7.89 ms | 8.502 ms | 8.832 ms | 8.156 ms |
+| 1000 | 183.145 ms | 198.72 ms | 185.366 ms | 457.876 ms |
+| 10000 | 7544.325 ms | 14192.32 ms | 8320.964 ms | 12932.759 ms |
 
 ## Result
 
@@ -48,10 +48,10 @@ Test is done with both sequential and parallel quicksort programs to find the av
 
 | Sample Size | Sequence | Parallel |
 |---|---|---|
-|10| 0.003 ms | 2.533 ms |
-|100| 0.029 ms | 8.0647 ms |
-|1000| 1.277 ms | 556.949 ms | 
-|10000| 40.426 ms | 10017.568 ms |
+|10| 0.004 ms | 2.535 ms |
+|100| 0.028 ms | 8.156 ms |
+|1000| 1.278 ms | 457.876 ms | 
+|10000| 45.426 ms | 12932.759 ms |
 
 ### Line Graph Comparison
 
